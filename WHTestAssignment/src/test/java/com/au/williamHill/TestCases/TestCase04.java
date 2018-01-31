@@ -13,7 +13,7 @@ import com.au.williamHill.baseSetup.BasePage;
 public class TestCase04 extends BasePage {
 
 	// This Test Case test the below mentioned test scenario:
-	// 1. Validation of Adding stake in a Betting Slip & Validating the same
+	// 1. Validation of Adding Stake (10.5) in a Betting Slip & Validating the same
 
 	@Test(priority = 1)
 	public void ValidateBettingSlipAmount() throws InterruptedException {

@@ -32,6 +32,7 @@ public class BettingSlipPage extends BasePage {
 	public void openBettingSlip() throws InterruptedException {
 		TestUtil.waitForElement(betSlipButton);
 		UserActions.clickAction(betSlipButton);
+		testLevelReport.get().info("Bet slip is opened successfully");
 	}
 
 	public void uncheckWPlcCheckbox() throws InterruptedException {
@@ -45,6 +46,7 @@ public class BettingSlipPage extends BasePage {
 		String BetStatkeAmount = betStakeAmount.getText();
 		Assert.assertEquals(BetStatkeAmount, excel.getCellData("PlaceBet", "Stake Amount", 2),
 				"Bet Stake Amount does not match");
+		testLevelReport.get().info("Stake Amount is matching");
 	}
 
 	public void submitBetSlip() throws InterruptedException {

@@ -6,7 +6,7 @@ import com.au.williamHill.baseSetup.BasePage;
 import com.aventstack.extentreports.Status;
 
 
-// This method is for User Actions
+// This method is for User Actions 
 public class UserActions extends BasePage {
 	
 	//This function performs the Click action of the mouse

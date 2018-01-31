@@ -20,11 +20,13 @@ public class BettingPage extends BasePage {
 		UserActions.clearAction(bettingAmount);
 		
 		UserActions.typeAction(bettingAmount, excel.getCellData("Place Bet", "Stake Amount", 2));
+		testLevelReport.get().info("Successfully entered Stake amount");
 	}
 
 	public void submitBettingAmount() throws InterruptedException {
 		TestUtil.waitForElement(bettingButton);
 		UserActions.clickAction(bettingButton);
+		testLevelReport.get().info("Submitted the bet successfully");
 	}
 
 }

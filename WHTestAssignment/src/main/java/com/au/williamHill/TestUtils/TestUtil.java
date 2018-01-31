@@ -41,9 +41,10 @@ public class TestUtil extends BasePage {
 	}
 
 	public static void waitForElement(WebElement element) {
-
+		testLevelReport.get().info("Waiting for WebElement");
 		WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(), 30);
 		wait.until(ExpectedConditions.visibilityOf(element));
+		
 	}
 
 }

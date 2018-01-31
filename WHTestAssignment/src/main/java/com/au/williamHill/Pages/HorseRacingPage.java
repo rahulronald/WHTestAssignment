@@ -10,7 +10,8 @@ public class HorseRacingPage extends BasePage {
 	@FindBy(css = "#app > div > div.App_root_3WJ > div.App_contentContainer_3od > div > div > div.TilesLayout_contentContainer_2p5 > div > div > div:nth-child(4) > div:nth-child(1) > div.Grid_grid_225 > div.Grid_content_3_1 > div > div:nth-child(1) > a:nth-child(4)")
 	private static WebElement race;
 
-	@FindBy(xpath = "//*[@id="+"app"+"]/div/div[1]/div[4]/div/div/div[1]/div/div/div[4]/div[1]/div[2]/div[2]/div/div[1]/a[5]")
+	@FindBy(xpath = "//*[@id=" + "app"
+			+ "]/div/div[1]/div[4]/div/div/div[1]/div/div/div[4]/div[1]/div[2]/div[2]/div/div[1]/a[5]")
 	private static WebElement racee;
 
 	@FindBy(xpath = ".//*[@id='mystery-bet']/form/div[2]/div/input")
@@ -21,6 +22,7 @@ public class HorseRacingPage extends BasePage {
 
 	public void navToRacingPage() throws InterruptedException {
 		NavigatorMenu.navToRacingMenu();
+		testLevelReport.get().info("Successfully navigated to the Horse Racing Page");
 	}
 
 	public void selectHorseRace() throws InterruptedException {
@@ -28,6 +30,8 @@ public class HorseRacingPage extends BasePage {
 		Thread.sleep(2000L);
 		race.click();
 		race.click();
+		
+		testLevelReport.get().info("Race is selected successfully");
 	}
 
 }

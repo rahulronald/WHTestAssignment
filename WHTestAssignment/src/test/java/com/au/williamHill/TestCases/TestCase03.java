@@ -15,7 +15,7 @@ public class TestCase03 extends BasePage {
 	// 1. Validation of William Hill's Homepage URL
 	// 2. Validation of William Hill's Homepage Title
 	// 3. Validation of William Hill's Homepage content
-
+ 
 	@Test (priority = 1)
 	public void ValidateHomePageContent() throws InterruptedException {
 

@@ -17,7 +17,7 @@ public class HomePage extends BasePage {
 	@FindBy(xpath = ".//*[@id='app']/div/div[1]/div[3]/div/div[1]/button[2]")
 	public WebElement betSlipLink;
 
-	// This method is validating the Home Page Url
+	// This method is validating the Home Page Url 
 	public void validateHomePageUrl() {
 		String expectedUrl = "https://www.williamhill.com.au/";
 		testLevelReport.get().log(Status.INFO,
