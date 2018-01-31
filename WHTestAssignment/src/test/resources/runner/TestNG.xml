@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="William Hill Test Assignment" parallel="classes" thread-count="5">
+
+	<listeners>
+		<listener class-name="com.au.williamHill.CustomListeners.CustomListeners"></listener>
+	</listeners>
+	<parameter name="" value=""></parameter>
+
+	<test name="Validate Betting Slip">
+		<classes>
+			<class name="com.au.williamHill.TestCases.TestCase01"/>
+			<class name="com.au.williamHill.TestCases.TestCase02"/>
+			<class name="com.au.williamHill.TestCases.TestCase03"/>
+			<class name="com.au.williamHill.TestCases.TestCase04"/>
+		</classes>
+	</test>
+</suite> 
