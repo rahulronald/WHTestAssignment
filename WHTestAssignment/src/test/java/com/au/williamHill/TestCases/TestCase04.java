@@ -31,7 +31,7 @@ public class TestCase04 extends BasePage {
 		bettingPage.submitBettingAmount();
 		
 		bettingSlipPage.openBettingSlip();
-		//bettingSlipPage.uncheckWPlcCheckbox();
+		bettingSlipPage.uncheckWPlcCheckbox();
 		bettingSlipPage.validateBettingSlipAmount();
 		bettingSlipPage.submitBetSlip();
 
